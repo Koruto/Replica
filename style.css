@@ -1,0 +1,405 @@
+body {
+    background-color: #f5f7fb;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+
+/* --------------------------- HEADER FORMATTING ---------------------------------- */
+
+header {
+    height: 50px;
+    background-color: white;
+    margin: 0;
+    display: flex;
+}
+
+#leftHeader {
+    margin: 10px 0px 0 40px;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.rightHeader {
+    position: absolute;
+    right: 0px;
+    margin: 10px 50px 0px 0px;
+}
+
+.rightHeader h4 {
+    display: flex;
+    font-weight: 600;
+    padding: 5px;
+    word-spacing: 10px;
+    height: auto;
+    width: auto;
+    margin: 0;
+}
+
+.rightHeader img {
+    float: left;
+    padding: 3px;
+    height: 20px;
+    width: auto;
+    padding: 8px 5px 0 0;
+}
+
+
+/* ---------------------------------- MAIN CONTENT FORMATTING ------------------------------- */
+
+.mainContent {
+    height: 580px;
+    display: flex;
+    background-color: transparent;
+    margin: 10px 50px 10px 50px;
+}
+
+
+/* --------------------------- LEFT PART ---------------------------------- */
+
+.leftPart {
+    flex-basis: 350px;
+    flex-shrink: 2;
+}
+
+.mageDiv {
+    padding: 10px;
+    background-color: white;
+    border-radius: 5px;
+    height: 150px;
+    width: auto;
+    margin-bottom: 10px;
+}
+
+.mageDiv img {
+    height: 100%;
+    width: 100%;
+}
+
+.presentersList {
+    height: 110px;
+    padding-right: 30px;
+    margin-bottom: 10px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.presentersList ul {
+    height: 50px;
+    overflow-y: scroll;
+    list-style-type: none;
+    padding-left: 20px;
+    margin: 0;
+}
+
+.presentersList h4 {
+    margin: 0px;
+    padding: 20px 0 0 20px;
+}
+
+.attendeesList h4 {
+    margin: 0px;
+    padding: 10px 0 0 20px;
+}
+
+.attendeesList ul {
+    height: 220px;
+    overflow-y: scroll;
+    list-style-type: none;
+    padding-left: 20px;
+    margin: 0;
+}
+
+.presentersList li {
+    padding: 1px 0;
+}
+
+.attendeesList li {
+    padding: 4px 0;
+}
+
+.attendeesList {
+    height: 280px;
+    padding-right: 30px;
+    margin-bottom: 10px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+
+/* --------------------- MIDDLE PART ---------------------------------- */
+
+.middlePart {
+    width: auto;
+    margin: 0px 10px;
+    padding: 20px;
+    background-color: white;
+    flex-basis: 750px;
+    border-radius: 5px;
+}
+
+#screenShare {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.middlePart h4 {
+    margin: 0;
+    position: relative;
+    bottom: 25px;
+}
+
+
+/* ------------------------------ RIGHT PART ------------------------------ */
+
+.rightPart {
+    height: 100%;
+    overflow-y: scroll;
+    flex-basis: 350px;
+    margin-bottom: 0px;
+    flex-shrink: 2;
+}
+
+.rightPart::-webkit-scrollbar {
+    width: 0px;
+    margin: 10px;
+}
+
+.whiteDiv {
+    background-color: white;
+    height: 200px;
+    width: auto;
+    border-radius: 5px;
+    overflow: hidden;
+    margin: 0px 0 15px 0;
+}
+
+.colorDiv {
+    height: 180px;
+    background-color: #c6c6c6;
+    border-radius: 5px;
+    margin: 10px 15px;
+    position: relative;
+}
+
+.circle {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    background-color: white;
+    position: absolute;
+    top: 35px;
+    left: 100px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    font-weight: 900;
+    box-shadow: 0 0 10px 3px #aaffd6 inset;
+    border: white;
+    border-style: solid;
+}
+
+.circleAnimation {
+    animation: micBlink 2s infinite;
+}
+
+.micIcon {
+    position: absolute;
+    bottom: 0px;
+    height: 18px;
+    width: auto;
+    padding: 0 0 10px 10px;
+    text-align: center;
+}
+
+@keyframes micBlink {
+    /* Incomplete */
+    0% {
+        box-shadow: 0 0 8px 15px white inset;
+        background-color: #aaffd6;
+    }
+    20% {
+        box-shadow: 0 0 8px 5px white inset;
+        background-color: #aaffd6;
+        transition-duration: 1s;
+    }
+    40% {
+        box-shadow: 0 0 8px 15px white inset;
+        background-color: #aaffd6;
+    }
+    60% {
+        box-shadow: 0 0 8px 5px white inset;
+        background-color: #aaffd6;
+        transition-duration: 0.3s;
+    }
+    80% {
+        box-shadow: 0 0 8px 15px white inset;
+        background-color: #aaffd6;
+    }
+    90% {
+        box-shadow: 0 0 8px 10px white inset;
+        background-color: #aaffd6;
+    }
+    100% {
+        box-shadow: 0 0 8px 15px white inset;
+        background-color: #aaffd6;
+    }
+}
+
+
+/* --------------------------------- FOOTER FORMATTING ------------------------------------ */
+
+footer {
+    height: 100px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+
+.footer-icon {
+    margin-left: 15px;
+}
+
+.iconFooter {
+    margin: 20px 8px;
+    height: 16px;
+    width: 35px;
+    float: left;
+    object-fit: scale-down;
+    border-radius: 5px;
+    background-color: #c4c4c4;
+    padding: 15px;
+}
+
+.iconFooter:hover {
+    background-color: #aaffd6;
+}
+
+.footer-name {
+    margin: 20px 0 5px 0px;
+    padding: 0px;
+}
+
+.footer-name h4 {
+    margin: 0px;
+    text-align: center;
+}
+
+.buttonFooter {
+    float: right;
+    margin-right: 80px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.buttonFooter {
+    background-color: #ff2c2c;
+    height: 50px;
+    width: 130px;
+    border-radius: 5px;
+    border: hidden;
+}
+
+.buttonFooter img {
+    object-fit: scale-down;
+    height: 20px;
+    width: auto;
+    padding: 5px 1px 5px 10px;
+}
+
+.buttonFooter>img,
+.buttonFooter>span {
+    vertical-align: middle;
+}
+
+.buttonFooter span {
+    padding: 5px 5px 5px 1px;
+    color: white;
+}
+
+.buttonFooter:hover {
+    animation: buttonAnimation 1s infinite ease-in-out;
+}
+
+@keyframes buttonAnimation {
+    0% {
+        background-color: #ff2c2c;
+    }
+    50% {
+        transform: scale(1.03, 1.03);
+    }
+    100% {}
+}
+
+
+/* ------------------------------ SCROLL BAR FORMATTING --------------------------------- */
+
+::-webkit-scrollbar {
+    width: 3px;
+    margin: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #ffffff;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #d6d6d6;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+
+/* ------------------------------- RESPONSIVENESS FORMATTING -------------------------------- */
+
+@media only screen and (max-height: 750px) {
+    .mainContent {
+        height: 500px;
+    }
+    .attendeesList {
+        height: 200px;
+        overflow: auto;
+    }
+}
+
+@media screen and (max-height: 670px) {
+    .mainContent {
+        height: 450px;
+    }
+    .attendeesList {
+        display: none;
+    }
+    .presentersList {
+        height: 270px;
+    }
+    .presentersList ul {
+        height: 250px;
+    }
+}
+
+@media screen and (max-width: 992px) and (min-width: 797px) {
+    .rightPart {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 797px) {
+    .footer-icon {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 10px !important;
+        /* Not Working */
+        margin: 10px 5px !important;
+    }
+    .footer-name,
+    .leftPart,
+    .rightPart {
+        display: none;
+    }
+}

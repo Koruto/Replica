@@ -1,0 +1,349 @@
+body {
+    background-color: #f5f7fb;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+header {
+    height: 50px;
+    background-color: white;
+    margin: 0;
+    display: flex;
+}
+
+#leftHeader {
+    /* ! Font Weight Size not Correct */
+    margin: 10px 0px 0 40px;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.rightHeader {
+    position: absolute;
+    right: 0px;
+    margin: 10px 50px 0px 0px;
+}
+
+.rightHeader h4 {
+    display: flex;
+    font-weight: 600;
+    padding: 5px;
+    word-spacing: 10px;
+    height: auto;
+    width: auto;
+    margin: 0;
+}
+
+.rightHeader img {
+    float: left;
+    padding: 3px;
+    height: 20px;
+    width: auto;
+    padding: 8px 5px 0 0;
+}
+
+
+/*TODO  CSS for Main Part  */
+
+.mainContent {
+    height: 580px;
+    display: flex;
+    /* justify-content: space-between; */
+    background-color: transparent;
+    margin: 10px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.leftPart {
+    flex-basis: 350px;
+    /* border-style: solid; */
+}
+
+.mageDiv {
+    padding: 10px;
+    background-color: white;
+    border-radius: 5px;
+    height: 150px;
+    width: auto;
+    margin-bottom: 10px;
+    /* background-image: url("camera-mage.png"); */
+}
+
+.mageDiv img {
+    height: 100%;
+    width: 100%;
+    /* object-fit: cover; */
+}
+
+.presentersList {
+    height: 110px;
+    padding-right: 30px;
+    margin-bottom: 10px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.presentersList ul {
+    height: 50px;
+    overflow-y: scroll;
+    list-style-type: none;
+    padding-left: 20px;
+    margin: 0;
+}
+
+.presentersList h4 {
+    /* ! Font Weight Size not Correct */
+    margin: 0px;
+    padding: 20px 0 0 20px;
+}
+
+.attendeesList h4 {
+    /* ! Font Weight Size not Correct */
+    margin: 0px;
+    padding: 10px 0 0 20px;
+}
+
+.attendeesList ul {
+    height: 220px;
+    overflow-y: scroll;
+    list-style-type: none;
+    padding-left: 20px;
+    margin: 0;
+}
+
+.presentersList li {
+    padding: 1px 0;
+}
+
+.attendeesList li {
+    padding: 4px 0;
+}
+
+.attendeesList {
+    height: 280px;
+    padding-right: 30px;
+    margin-bottom: 10px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.middlePart {
+    width: auto;
+    margin: 0px 10px;
+    padding: 20px;
+    /* border-style: solid; */
+    background-color: white;
+    flex-basis: 750px;
+}
+
+#screenShare {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.middlePart h4 {
+    margin: 0;
+    position: relative;
+    bottom: 25px;
+}
+
+.rightPart {
+    height: 100%;
+    overflow-y: scroll;
+    /* border-style: solid; */
+    flex-basis: 350px;
+    margin-bottom: 0px;
+}
+
+.rightPart::-webkit-scrollbar {
+    width: 0px;
+    margin: 10px;
+}
+
+.whiteDiv {
+    background-color: white;
+    height: 200px;
+    width: auto;
+    /* position: relative; */
+    border-radius: 5px;
+    overflow: hidden;
+    margin: 0px 0 15px 0;
+}
+
+.colorDiv {
+    height: 180px;
+    /* margin: 0px 0 15px 0; */
+    background-color: #c6c6c6;
+    /* border-color: white; */
+    /* border-width: 10px 15px; */
+    border-radius: 5px;
+    margin: 10px 15px;
+    /* border-style: solid; */
+    position: relative;
+    /* overflow: hidden; */
+    /* padding: 10px 15px; */
+    /* position: absolute; */
+}
+
+.circle {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    position: relative;
+    background-color: white;
+    position: absolute;
+    top: 50px;
+    left: 100px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 10px 3px #aaffd6 inset;
+    border: white;
+    border-style: solid;
+    animation: exam;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+.micIcon {
+    position: absolute;
+    bottom: 0px;
+    height: 18px;
+    width: auto;
+    padding: 0 0 10px 10px;
+    text-align: center;
+}
+
+@keyframes exam {
+    50% {
+        box-shadow: 0 0 5px 2px;
+    }
+}
+
+
+/* Ends Here */
+
+footer {
+    height: 100px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-icon {
+    margin-left: 15px;
+}
+
+.iconFooter {
+    margin: 20px 8px;
+    height: 16px;
+    width: 35px;
+    float: left;
+    object-fit: scale-down;
+    border-radius: 5px;
+    background-color: #c4c4c4;
+    padding: 15px;
+}
+
+.iconFooter:hover {
+    background-color: #aaffd6;
+}
+
+.footer-name {
+    margin: 20px 0 5px 0px;
+    padding: 0px;
+}
+
+.footer-name h4 {
+    margin: 0px;
+    text-align: center;
+}
+
+.buttonFooter {
+    float: right;
+    margin-right: 80px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+@keyframes example {
+    0% {
+        background-color: #ff2c2c;
+    }
+    50% {
+        background-color: yellow;
+    }
+    100% {
+        background-color: violet;
+    }
+}
+
+.buttonFooter {
+    background-color: #ff2c2c;
+    height: 50px;
+    width: 130px;
+    border-color: white;
+    border-radius: 5px;
+    border-style: hidden;
+    animation-name: example;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+.buttonFooter img {
+    object-fit: scale-down;
+    height: 20px;
+    width: auto;
+    padding: 5px 1px 5px 10px;
+}
+
+.buttonFooter>img,
+.buttonFooter>span {
+    vertical-align: middle;
+}
+
+.buttonFooter span {
+    padding: 5px 5px 5px 1px;
+    color: white;
+}
+
+.buttonFooter:hover {
+    /* transform: scale(1.1, 1.1); */
+    animation: example;
+    animation-duration: 1s;
+}
+
+
+/* Scrollbar */
+
+
+/* width */
+
+::-webkit-scrollbar {
+    width: 3px;
+    margin: 10px;
+}
+
+
+/* Track */
+
+::-webkit-scrollbar-track {
+    background: #ffffff;
+}
+
+
+/* Handle */
+
+::-webkit-scrollbar-thumb {
+    background: #d6d6d6;
+}
+
+
+/* Handle on hover */
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
